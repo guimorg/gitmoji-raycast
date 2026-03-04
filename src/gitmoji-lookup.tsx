@@ -1,45 +1,52 @@
 import { List, ActionPanel, Action } from "@raycast/api";
+import { useState } from "react";
 import gitmojisData from "./gitmojis.json";
 
 export default function Command() {
-  const gitmojis = gitmojisData.gitmojis;
+  const [searchText, setSearchText] = useState("");
+  const allGitmojis = gitmojisData.gitmojis;
+
+  const filteredGitmojis = allGitmojis.filter((item) => {
+    const search = searchText.toLowerCase();
+    const searchTerms = search.split(" ").filter(term => term.length > 0);
+    return searchTerms.every(term => 
+    item.code.toLowerCase().includes(term) ||
+    item.name.toLowerCase().includes(term) ||
+    item.description.toLowerCase().includes(term)
+    );
+  });
 
   return (
     <List
       isShowingDetail
-      searchBarPlaceholder="Try typing 'build' or 'ci'..."
-      filtering={true}
+      searchBarPlaceholder="Search by name, emoji, or description..."
+      onSearchTextChange={setSearchText}
+      filtering={false}
     >
-      {gitmojis.map((item) => {
-        const cleanDescription = item.description.trim();
-        const cleanCode = item.code.trim();
-
-        return (
-          <List.Item
-            key={item.name}
-            icon={item.emoji}
-            title={cleanCode}
-            subtitle={cleanDescription}
-            keywords={[
-                cleanDescription,
-                item.name,
-                cleanCode.replace(/:/g, "")
-            ]}
-            detail={
-              <List.Item.Detail
-                markdown={`# ${item.emoji}\n## ${item.code}\n\n${item.description}`}
+      {filteredGitmojis.map((item) => (
+        <List.Item
+          key={item.name}
+          icon={item.emoji}
+          title={item.code}
+          subtitle={item.description}
+          detail={
+            <List.Item.Detail
+              markdown={`# ${item.emoji}\n## ${item.code}\n\n${item.description}`}
+            />
+          }
+          actions={
+            <ActionPanel>
+              <Action.Paste title="Paste Code" content={item.code} />
+              <Action.Paste 
+                title="Paste Emoji" 
+                content={item.emoji} 
+                shortcut={{ modifiers: ["cmd"], key: "enter" }} 
               />
-            }
-            actions={
-              <ActionPanel>
-                <Action.Paste title="Paste Code" content={item.code} />
-                <Action.Paste title="Paste Emoji" content={item.emoji} shortcut={{ modifiers: ["cmd"], key: "enter" }}/>
-                <Action.CopyToClipboard title="Copy Code" content={item.code} />
-              </ActionPanel>
-            }
-          />
-        );
-      })}
+              <Action.CopyToClipboard title="Copy Code" content={item.code} />
+            </ActionPanel>
+          }
+        />
+      ))}
     </List>
   );
 }
