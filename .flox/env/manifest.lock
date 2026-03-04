@@ -1,0 +1,144 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "nodejs_23": {
+        "pkg-path": "nodejs_23"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "nodejs_23",
+      "broken": false,
+      "derivation": "/nix/store/1spf6mz9mh2v7rzldgsgc4zqly8k4lad-nodejs-23.10.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs_23",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=698214a32beb4f4c8e3942372c694f40848b360d",
+      "name": "nodejs-23.10.0",
+      "pname": "nodejs_23",
+      "rev": "698214a32beb4f4c8e3942372c694f40848b360d",
+      "rev_count": 773904,
+      "rev_date": "2025-03-25T07:53:30Z",
+      "scrape_date": "2025-03-27T01:10:00.070426Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "23.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/ks94i4365833bykrzg3d3mqxnciygyrn-nodejs-23.10.0-libv8",
+        "out": "/nix/store/dihlffh62qmgzsrxq1igwxicdyr3fn8a-nodejs-23.10.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs_23",
+      "broken": false,
+      "derivation": "/nix/store/vr9h1n89v37pc60w99ap4gcn2sylxz85-nodejs-23.10.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs_23",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=698214a32beb4f4c8e3942372c694f40848b360d",
+      "name": "nodejs-23.10.0",
+      "pname": "nodejs_23",
+      "rev": "698214a32beb4f4c8e3942372c694f40848b360d",
+      "rev_count": 773904,
+      "rev_date": "2025-03-25T07:53:30Z",
+      "scrape_date": "2025-03-27T01:27:22.061080Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "23.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/kfvlfxx83n2w2fyb8hiz4p4dc165r035-nodejs-23.10.0-libv8",
+        "out": "/nix/store/m7j1lf8a4z5bfla1m78pa3y12888hl7b-nodejs-23.10.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs_23",
+      "broken": false,
+      "derivation": "/nix/store/s46l287072llz169hzvk3n6plgbjpnhg-nodejs-23.10.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs_23",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=698214a32beb4f4c8e3942372c694f40848b360d",
+      "name": "nodejs-23.10.0",
+      "pname": "nodejs_23",
+      "rev": "698214a32beb4f4c8e3942372c694f40848b360d",
+      "rev_count": 773904,
+      "rev_date": "2025-03-25T07:53:30Z",
+      "scrape_date": "2025-03-27T01:43:00.443836Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "23.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/f1ks4vzqmnlqzdmmb21jx1ai6wxv98wm-nodejs-23.10.0-libv8",
+        "out": "/nix/store/hyhn44vvlywymsq22lyi5rc6pr609h4j-nodejs-23.10.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "nodejs_23",
+      "broken": false,
+      "derivation": "/nix/store/ljsbmhhryc4zwwgl0qh41jyd49hc6bgw-nodejs-23.10.0.drv",
+      "description": "Event-driven I/O framework for the V8 JavaScript engine",
+      "install_id": "nodejs_23",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=698214a32beb4f4c8e3942372c694f40848b360d",
+      "name": "nodejs-23.10.0",
+      "pname": "nodejs_23",
+      "rev": "698214a32beb4f4c8e3942372c694f40848b360d",
+      "rev_count": 773904,
+      "rev_date": "2025-03-25T07:53:30Z",
+      "scrape_date": "2025-03-27T02:01:53.369643Z",
+      "stabilities": [
+        "unstable",
+        "staging",
+        "stable"
+      ],
+      "unfree": false,
+      "version": "23.10.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "libv8": "/nix/store/0xr2n0myy83mdr92f7a4446n8amgbkw7-nodejs-23.10.0-libv8",
+        "out": "/nix/store/l8y6wplngbl6lfm23m16ca621w5mrrb3-nodejs-23.10.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
