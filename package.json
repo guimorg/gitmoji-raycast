@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "gitmoji-lookup",
-  "title": "gitmoji-lookup",
+  "name": "gitmoji",
+  "title": "gitmoji-raycast",
   "description": "",
   "icon": "gitmoji-brand.png",
   "author": "guimorg",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "gitmoji-lookup",
+      "name": "gitmoji",
       "title": "gitmoji",
       "description": "An emoji guide for your commit messages",
       "mode": "view"

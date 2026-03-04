@@ -1,4 +1,4 @@
-# 🎨 gitmoji-lookup
+# 🎨 gitmoji-raycast
 
 >  Built with **React**, **TypeScript**, and managed with **Flox**.
 
@@ -84,6 +84,6 @@ npm run sync
 
 To make this extension even faster, set a **manual alias**:
 1. Open Raycast and go to **Settings > Extensions**.
-2. Find **Gitmoji Lookup**.
+2. Find **Gitmoji**.
 3. Set the **Alias** to `gj`.
 4. Now you can launch it instantly by typing `gj` in Raycast.
