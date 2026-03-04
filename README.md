@@ -48,17 +48,6 @@ npm run build
 
 ---
 
-## 🔄 Syncing Data
-
-Since the extension uses a local `gitmojis.json` for 100% reliability and speed, you can sync it manually to get new emojis from the official source.
-
-```bash
-# Runs the python sync script to fetch latest from GitHub
-npm run sync
-```
-
----
-
 ## ⌨️ Shortcuts
 
 | Action | Shortcut |
@@ -66,16 +55,14 @@ npm run sync
 | **Paste Code** (e.g., `:art:`) | `Enter` |
 | **Paste Emoji** (e.g., `🎨`) | `Cmd + Enter` |
 | **Copy Code to Clipboard** | `Cmd + C` |
-| **Open Search** (If Alias set) | `gj` |
 
 ---
 
 ## 📂 Project Structure
 
-* `src/index.tsx`: The main React component for the Raycast UI.
+* `src/gitmoji.tsx`: The main React component for the Raycast UI.
 * `src/gitmojis.json`: Local cache of the Gitmoji library.
-* `sync.py`: Python script to update the local JSON from the official source.
-* `assets/app-icon.png`: The extension icon (visible in Raycast).
+* `assets/gitmoji-brand.png`: The extension icon (visible in Raycast).
 * `package.json`: Metadata and dependencies.
 
 ---
